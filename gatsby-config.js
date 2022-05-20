@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png'
+        icon: 'src/images/icon.svg'
       }
     },
     'gatsby-plugin-mdx',
@@ -56,13 +56,15 @@ module.exports = {
       options: {
         plugins: ['gatsby-remark-mathjax']
       }
-    }
+    },
+    'gatsby-plugin-resolve-src',
+    'gatsby-plugin-material-ui'
   ],
   siteMetadata: {
     siteUrl: 'http://gu-analytics-nonprofits.s3-website-us-east-1.amazonaws.com',
     title: 'Goergetown Data Science',
     titleTemplate: '%s · Analytics for Nonprofits',
     description: "The main webpage for Georgetown University's Analytics for Non Profits Group",
-    image: '/images/icon.png'
+    image: '/images/icon.svg'
   }
 };

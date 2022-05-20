@@ -5,7 +5,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import { Heading } from '@chakra-ui/react';
 
-import DefaultMarkdownRendererOptions from '../components/markdown-renderer';
+import DefaultMarkdownRendererOptions from 'components/markdown-renderer';
 
 // From React Helment
 // https://github.com/nfl/react-helmet/issues/146#issuecomment-271528282
