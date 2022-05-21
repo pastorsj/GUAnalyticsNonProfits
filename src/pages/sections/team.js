@@ -68,7 +68,7 @@ function Team() {
             <MKBox mb={1}>
               <HorizontalTeamCard
                 image={vicePresident}
-                name="Jacob Mcintosh"
+                name="Jacob McIntosh"
                 position={{ color: 'info', label: 'Vice President' }}
                 description="Insert information about Mac"
               />
