@@ -29,7 +29,7 @@ import MKTypography from 'components/creative-tim/MKTypography';
 import DefaultNavbar from 'components/creative-tim/DefaultNavbar';
 
 // Image
-import bgImage from 'images/icon.svg';
+import bgImage from 'images/bg-contact-us.jpg';
 import theme from 'assets/theme';
 import routes from 'components/routes';
 
@@ -49,7 +49,7 @@ function ContactUs() {
             borderRadius="lg"
             ml={2}
             mt={2}
-            sx={{ backgroundImage: `url(${bgImage})` }}
+            sx={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover' }}
           />
         </Grid>
         <Grid item xs={12} sm={10} md={7} lg={6} xl={4} ml={{ xs: 'auto', lg: 6 }} mr={{ xs: 'auto', lg: 6 }}>

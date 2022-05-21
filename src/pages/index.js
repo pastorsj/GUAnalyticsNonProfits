@@ -20,7 +20,7 @@ import DefaultNavbar from 'components/creative-tim/DefaultNavbar';
 import DesignBlocks from 'components/creative-tim/DesignBlocks/DesignBlocks';
 
 // Images
-import bgImage from 'assets/images/bg-main.jpg';
+import bgImage from 'images/bg-main.jpg';
 import theme from 'assets/theme';
 import routes from 'components/routes';
 
@@ -64,8 +64,7 @@ const IndexPage = () => {
               GU Analytics for Nonprofits
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We provide pro-bono analytics consulting services to nonprofit organizations through semester-long or
-              year-long projects.
+              Driving Change Across the Nonprofit Sector
             </MKTypography>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on

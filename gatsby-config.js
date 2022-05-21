@@ -15,7 +15,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.svg'
+        icon: 'src/images/icon.png'
       }
     },
     'gatsby-plugin-mdx',
@@ -65,6 +65,6 @@ module.exports = {
     title: 'Goergetown Data Science',
     titleTemplate: '%s · Analytics for Nonprofits',
     description: "The main webpage for Georgetown University's Analytics for Non Profits Group",
-    image: '/images/icon.svg'
+    image: '/images/icon.png'
   }
 };

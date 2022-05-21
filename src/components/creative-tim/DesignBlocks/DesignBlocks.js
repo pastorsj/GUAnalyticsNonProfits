@@ -67,25 +67,6 @@ function DesignBlocks() {
 
   return (
     <MKBox component="section" my={6} py={6}>
-      <Container>
-        <Grid
-          container
-          item
-          xs={12}
-          lg={6}
-          flexDirection="column"
-          alignItems="center"
-          sx={{ textAlign: 'center', my: 6, mx: 'auto', px: 0.75 }}
-        >
-          <MKBadge variant="contained" color="info" badgeContent="Infinite combinations" container sx={{ mb: 2 }} />
-          <MKTypography variant="h2" fontWeight="bold">
-            Success S
-          </MKTypography>
-          <MKTypography variant="body1" color="text">
-            We have created multiple options for you to put together and customise into pixel perfect pages.
-          </MKTypography>
-        </Grid>
-      </Container>
       <Container sx={{ mt: 6 }}>{renderData}</Container>
     </MKBox>
   );

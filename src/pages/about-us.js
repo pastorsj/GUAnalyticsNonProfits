@@ -25,18 +25,19 @@ import CssBaseline from '@mui/material/CssBaseline';
 // Material Kit 2 React components
 import MKBox from 'components/creative-tim/MKBox';
 import MKTypography from 'components/creative-tim/MKTypography';
-import MKButton from 'components/creative-tim/MKButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 // Material Kit 2 React examples
 import DefaultNavbar from 'components/creative-tim/DefaultNavbar';
 
 // About Us page sections
-import Information from 'pages/sections/information';
 import Team from 'pages/sections/team';
 import Featuring from 'pages/sections/featuring';
 
 // Images
-import bgImage from 'assets/images/bg-about-us.jpg';
+import bgImage from 'images/bg-about-us.jpg';
 import theme from 'assets/theme';
 import routes from 'components/routes';
 
@@ -77,30 +78,45 @@ function AboutUs() {
                 }
               })}
             >
-              Work with an amazing design
+              Work with us
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to
-              play this game
+              We are a student-run group that partners with innovative nonprofits that are changing the world, offering
+              deep analytical expertise and consulting experience to help them make the world a better place.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
             <MKTypography variant="h6" color="white" mt={8} mb={1}>
               Find us on
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                mr={3}
+                href="https://www.linkedin.com/company/gu-analytics-for-nonprofits/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faLinkedin} />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                mr={3}
+                href="https://medium.com"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faMedium} />
               </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
+              <MKTypography
+                component="a"
+                variant="body1"
+                color="white"
+                mr={3}
+                href="https://analytics.georgetown.edu/nonprofits/"
+                target="_blank"
+              >
+                <FontAwesomeIcon icon={faGlobe} />
               </MKTypography>
             </MKBox>
           </Grid>
@@ -115,9 +131,8 @@ function AboutUs() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl
         }}
       >
-        <Information />
-        <Team />
         <Featuring />
+        <Team />
       </Card>
     </ThemeProvider>
   );

@@ -39,11 +39,6 @@ function DefaultNavbarDropdown({ name, icon, children, collapseStatus, light, hr
     href: route
   };
 
-  console.log('Route', route);
-  console.log('Href', href);
-  console.log('Route Component', routeComponent);
-  console.log('Link Component', linkComponent);
-
   return (
     <>
       <MKBox

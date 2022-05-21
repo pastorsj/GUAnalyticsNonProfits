@@ -42,6 +42,7 @@ import DefaultNavbarMobile from 'components/creative-tim/DefaultNavbar/DefaultNa
 
 // Material Kit 2 React base styles
 import breakpoints from 'assets/theme/base/breakpoints';
+import { StaticImage } from 'gatsby-plugin-image';
 
 function DefaultNavbar({ brand, routes, transparent, light, action, sticky, relative, center }) {
   const [dropdown, setDropdown] = useState('');
@@ -468,6 +469,17 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
+            <StaticImage
+              src="../../../images/icon.png"
+              alt="Profile picture"
+              style={{
+                minWidth: '21px',
+                maxWidth: '21px',
+                minHeight: '21px',
+                maxHeight: '21px',
+                marginRight: '5px'
+              }}
+            />
             <MKTypography variant="button" fontWeight="bold" color={light ? 'white' : 'dark'}>
               {brand}
             </MKTypography>
@@ -530,7 +542,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: 'Georgetown University',
+  brand: 'GU Analytics for Nonprofits',
   transparent: false,
   light: false,
   action: false,
