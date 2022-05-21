@@ -57,8 +57,7 @@ module.exports = {
         plugins: ['gatsby-remark-mathjax']
       }
     },
-    'gatsby-plugin-resolve-src',
-    'gatsby-plugin-material-ui'
+    'gatsby-plugin-resolve-src'
   ],
   siteMetadata: {
     siteUrl: 'http://gu-analytics-nonprofits.s3-website-us-east-1.amazonaws.com',
