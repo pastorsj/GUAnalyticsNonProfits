@@ -33,8 +33,8 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import DefaultNavbar from 'components/creative-tim/DefaultNavbar';
 
 // About Us page sections
-import Team from 'pages/sections/team';
-import Featuring from 'pages/sections/featuring';
+import Team from 'sections/team';
+import Featuring from 'sections/featuring';
 
 // Images
 import bgImage from 'images/bg-about-us.jpg';
